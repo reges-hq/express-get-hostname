@@ -1,6 +1,6 @@
 module.exports = function() {
     return (req, res, next) => {
-        res.setHeader('x-hostname', process.env.HOSTNAME);
+        res.setHeader('X-Hostname', process.env.HOSTNAME);
         next();
     };
 };
